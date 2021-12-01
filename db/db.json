@@ -1,0 +1,89 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Vikas",
+      "email": "user@test.com",
+      "password": "123456",
+      "phoneNumber": 8723123456,
+      "role": "user"
+    },
+    {
+      "id": "2",
+      "name": "Admin",
+      "email": "admin@test.com",
+      "password": "123456",
+      "phoneNumber": 8723123456,
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "Admin",
+      "email": "admin@fake.com",
+      "password": "admin",
+      "phoneNumber": 8723123456,
+      "role": "admin"
+    }
+  ],
+  "bookedJourney": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "source": [
+    {
+      "id": "1",
+      "name": "Delhi"
+    },
+    {
+      "id": "2",
+      "name": "Mumbai"
+    }
+  ],
+  "destination": [
+    {
+      "id": "1",
+      "name": "America"
+    },
+    {
+      "id": "2",
+      "name": "Uk"
+    }
+  ],
+  "stations": [
+    {
+      "id": "3af79cd4-a70a-418a-8621-deda023c1f75",
+      "stationName": "Let"
+    },
+    {
+      "id": "0387f37b-153a-4715-8283-a11dba17f002",
+      "stationName": "Delhi Hili"
+    },
+    {
+      "id": "e2b48190-9abc-4a5b-8fa6-e9fc20b75625",
+      "stationName": "Let"
+    }
+  ],
+  "booking": [
+    {
+      "id": "67b17734-1c48-4468-849e-1744b5034f05",
+      "source": "Mumbai",
+      "destination": "America",
+      "journeyDate": "2021-11-23 - 2021-11-16",
+      "userName": "Vikas",
+      "stationName": "Mumbai Hart",
+      "userId": "1"
+    },
+    {
+      "id": "decd8db5-e6af-47a0-8068-cab73e22d69c",
+      "source": "Delhi",
+      "destination": "America",
+      "journeyDate": "2021-11-30 - 2021-11-10",
+      "userName": "Vikas",
+      "stationName": "Delhi Hili",
+      "userId": "1"
+    }
+  ]
+}
