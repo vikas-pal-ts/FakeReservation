@@ -1,8 +1,8 @@
 ### Project Setup
 
-1. yarn
-2. yarn start (start frontend)
-3. yarn db (for start database)
+1. `yarn`
+2. `yarn start` (start frontend)
+3. `yarn db` (for start database)
 
 #### Requirement
 
@@ -10,6 +10,16 @@
 #### Node and npm install on your system
 
 ### Tested on Linux System
+
+### Login Credentials
+
+##### User Login Credentials
+
+###### email `user@test.com` password `123456`
+
+##### Admin Login Credentials
+
+###### email `admin@fake.com` password `admin`
 
 
 
