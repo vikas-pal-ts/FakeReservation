@@ -106,7 +106,7 @@ const PlanJourney = () => {
     }, []);
     return (
 
-        <Sidebar>
+        <Sidebar pageTitle={'Plan New Journey'}>
             <div className="flex flex-col justify-center items-center w-full h-full">
                 <div className="lg:w-6/12 w-11/12 px-8 py-6 mt-4 text-left bg-white shadow-lg rounded-xl">
                     <AppInputLabel title={errors.errorText} size={'base'} className={'text-green-700 text-center block mt-5'} />
