@@ -1,3 +1,18 @@
+### Project Setup
+
+1. yarn
+2. yarn start (start frontend)
+3. yarn db (for start database)
+
+#### Requirement
+
+##### you need to install json-server on your system using `npm install -g json-server`
+#### Node and npm install on your system
+
+### Tested on Linux System
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
