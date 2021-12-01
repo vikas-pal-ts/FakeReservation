@@ -56,7 +56,7 @@ const AddStation = () => {
         }
     )
     return (
-        <Sidebar>
+        <Sidebar pageTitle={'Add Station'}>
             <div className="flex items-center justify-center bg-gray-100">
                 <div className="px-8 py-6 mt-4 text-left bg-white shadow-lg">
                     <AppInputLabel title={errors.errorText} size={'base'} className={'text-green-700 text-center block mt-5'} />

@@ -1,7 +1,9 @@
 import React from 'react';
 import AppInput from '../components/AppInput'
+import AppPageTitle from './AppPageTitle';
 
-const AppSearch = ({ list, updateState, searchKeys }) => {
+const AppSearch = ({ list, updateState, searchKeys, pageTitle, isSearchEnable }) => {
+
     const filtering = (listItem, value) => {
         if (searchKeys.length) {
             const condition = searchKeys.map((key) => {
@@ -11,10 +13,8 @@ const AppSearch = ({ list, updateState, searchKeys }) => {
         } else {
             return [true]
         }
-
-
-
     }
+
     const onSearch = async (e) => {
         const value = e.target.value.toLowerCase()
         const newList = [...list]
@@ -23,14 +23,16 @@ const AppSearch = ({ list, updateState, searchKeys }) => {
         })
         updateState(filteredList)
     }
+
     return (
-        <div className={`flex flex-row w-full justify-end`}>
-            <AppInput type="text" onChange={onSearch} placeholder="Search" className={`bg-white rounded-full`} width={'3/12'} />
-        </div>
+        isSearchEnable ? (
+            <AppInput type="text" onChange={onSearch} placeholder="Search" className={`bg-gray-100 rounded-full`} width={'3/12'} />
+        ) : null
     )
 }
 
 AppSearch.defaultProps = {
-    searchKeys: []
+    searchKeys: [],
+    isSearchEnable: true
 }
 export default AppSearch

@@ -1,10 +1,9 @@
 import React, { useCallback, useState } from "react";
 import { LeftArrowSvg, RightArrowSvg } from "../svg";
 
-const Pagination = ({ data, RenderComponent, pageLimit, dataLimit, thArray, trArray, handleRefresh, apiEndPoint }) => {
-    const [pages] = useState(Math.round(data.length / dataLimit));
+const Pagination = ({ data, RenderComponent, dataLimit, thArray, trArray, handleRefresh, apiEndPoint }) => {
     const [currentPage, setCurrentPage] = useState(1);
-
+    const pageLimit = Math.round(data.length / dataLimit)
     const goToNextPage = useCallback(() => {
         setCurrentPage((page) => page + 1);
     }, [])
@@ -29,7 +28,6 @@ const Pagination = ({ data, RenderComponent, pageLimit, dataLimit, thArray, trAr
         const returnData = new Array(pageLimit).fill().map((_, idx) => start + idx + 1);
         return returnData;
     }, [currentPage, pageLimit]);
-
     return (
         <div>
             <div className="dataContainer">
@@ -58,7 +56,7 @@ const Pagination = ({ data, RenderComponent, pageLimit, dataLimit, thArray, trAr
                     <button
                         onClick={goToNextPage}
                         disabled={currentPage === pageLimit}
-                        className={`next ${currentPage === pageLimit ? 'disabled' : ''} px-5 py-1 rounded-full ml-1`}
+                        className={`next ${currentPage === pageLimit ? 'disabled' : ''} px-5 py-1 rounded-full ml-1 text-blue-700`}
                     >
                         {RightArrowSvg}
                     </button>

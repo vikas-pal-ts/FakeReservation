@@ -4,8 +4,9 @@ import { AppContext } from '../context/AppContext';
 import { LogoutSvg } from '../svg';
 import AllRoutes from '../utils/AllRoutes';
 import AppHeader from './AppHeader'
+import AppPageTitle from './AppPageTitle';
 
-const Sidebar = ({ children }) => {
+const Sidebar = ({ children, pageTitle, searchComp }) => {
     const currentPage = window.location.pathname;
     const navigate = useNavigate();
     const { setUser, getUser } = useContext(AppContext)
@@ -46,9 +47,14 @@ const Sidebar = ({ children }) => {
                     </ul>
                 </div>
                 <div className="lg:pl-3 flex-col lg:w-10/12 w-full">
+                    <div className={`flex lg:flex-row flex-col w-full justify-between items-center lg:bg-white p-3 rounded-lg min-h-36`}>
+                        {pageTitle && (
+                            <AppPageTitle title={pageTitle} />
+                        )}
+                        {searchComp}
+                    </div>
                     {children}
                 </div>
-
             </div>
         </AppHeader>
 

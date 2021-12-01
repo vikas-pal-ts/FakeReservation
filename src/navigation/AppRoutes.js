@@ -11,11 +11,11 @@ import AllRoutes from '../utils/AllRoutes';
 const AppRoutes = () => {
     return (
         <Routes>
-            {AllRoutes.map((route, index) => {
+            {AllRoutes.map(({ Component, path, access }, index) => {
                 return (
-                    <Route key={index} path={route.path} caseSensitive={false} element={
-                        <AuthPrivateRoute role={route.access}>
-                            {route.component}
+                    <Route key={index} path={path} caseSensitive={false} element={
+                        <AuthPrivateRoute role={access}>
+                            {<Component />}
                         </AuthPrivateRoute>
                     } />
                 )
