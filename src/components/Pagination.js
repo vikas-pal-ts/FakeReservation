@@ -27,7 +27,6 @@ const Pagination = ({ data, RenderComponent, pageLimit, dataLimit, thArray, trAr
     const getPaginationGroup = useCallback(() => {
         let start = Math.floor((currentPage - 1) / pageLimit) * pageLimit;
         const returnData = new Array(pageLimit).fill().map((_, idx) => start + idx + 1);
-        console.log(returnData, 'returnData')
         return returnData;
     }, [currentPage, pageLimit]);
 
