@@ -58,12 +58,16 @@
       "stationName": "Let"
     },
     {
-      "id": "0387f37b-153a-4715-8283-a11dba17f002",
-      "stationName": "Delhi Hili"
-    },
-    {
       "id": "e2b48190-9abc-4a5b-8fa6-e9fc20b75625",
       "stationName": "Let"
+    },
+    {
+      "id": "f0e28746-5185-4fd1-b565-5147e501d7e6",
+      "stationName": "Let"
+    },
+    {
+      "id": "48837995-5330-4f6b-b21c-44976f9aaddd",
+      "stationName": "Delhi Hili"
     }
   ],
   "booking": [
