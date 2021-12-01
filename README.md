@@ -7,9 +7,8 @@
 #### Requirement
 
 ##### you need to install json-server on your system using `npm install -g json-server`
-#### Node and npm install on your system
 
-### Tested on Linux System
+#### Node and npm install on your system
 
 ### Login Credentials
 
@@ -20,6 +19,8 @@
 ##### Admin Login Credentials
 
 ###### email `admin@fake.com` password `admin`
+
+### Tested on Linux System
 
 
 
