@@ -2,12 +2,9 @@ import React from 'react'
 import DeleteButton from '../DeleteButton';
 
 const AppTable = ({ data, thArray, trArray, handleRefresh, apiEndPoint }) => {
-    console.log(thArray, trArray, 'data');
     return (
         <table class="w-full flex flex-row flex-no-wrap sm:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5">
             <thead class="text-white">
-
-
                 {data.map((item) => {
                     return (
                         <tr key={item?.id} class="bg-teal-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none lg:mb-2 mb-4">
@@ -19,9 +16,6 @@ const AppTable = ({ data, thArray, trArray, handleRefresh, apiEndPoint }) => {
                         </tr>
                     )
                 })}
-
-
-
             </thead>
             <tbody class="flex-1 sm:flex-none">
                 {data.map((item, index) => {

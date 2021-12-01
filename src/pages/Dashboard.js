@@ -44,7 +44,7 @@ const PaginationDataLimit = 2
 const Dashboard = () => {
     const [bookingList, setbookingList] = useState([]);
     const [searchList, setSearchList] = useState([]);
-    const [pageLimit, setPageLimit] = useState(5);
+    const [pageLimit, setPageLimit] = useState(0);
     const apiEndPoint = '/booking';
     const { getUser } = useContext(AppContext)
     const currentUserIsAdmin = getUser()?.role === 'admin';

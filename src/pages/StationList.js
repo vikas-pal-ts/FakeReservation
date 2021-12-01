@@ -29,7 +29,7 @@ const PaginationDataLimit = 2
 const StationList = () => {
     const [stationList, setstationList] = useState([])
     const [searchList, setSearchList] = useState([]);
-    const [pageLimit, setPageLimit] = useState(5);
+    const [pageLimit, setPageLimit] = useState(0);
     const apiEndPoint = '/stations';
     const getStationData = async () => {
         const data = await Api.get(apiEndPoint);
